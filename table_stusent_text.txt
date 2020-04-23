@@ -1,0 +1,10 @@
+create table student_text(
+ID int,
+Name varchar(20),
+Password varchar(20),
+Birthday timestamp,
+Sex varchar(5),
+age int,
+amout decimal(13,2),
+resume text
+);

@@ -1,0 +1,25 @@
+设计一张图书表，包含以下字段：图书名称，图书作者、图书价格、图书分类
+create table book(
+Name varchar(20),
+Author varchar(20),
+Price int,
+Classification varchar(20)
+);
+设计一张老师表，包含以下字段：姓名、年龄、身高、体重、性别、学历、生日、身份证号
+create table teacher(
+Name varchar(20),
+Age int,
+Height int,
+Weight int,
+Sex varchar(5),
+Degree varchar(10),
+Birthday timestamp,
+ID_CardNumber varchar(20)
+);
+设计一张商品表，包含以下字段：商品名称、商品价格、商品库存、商品描述
+create table merchandise(
+Name varchar(20),
+Price int,
+Inventory int,
+Description text
+);
