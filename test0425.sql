@@ -60,3 +60,43 @@
         s_id int,
         foreign key(s_id) references student(id)
         );
+
+create table student(
+     id int,
+     name varchar(20),
+     age int,
+     math int,
+     chinese int
+     )character set utf8mb4;
+
+     insert into student values(1,'李明',17,89,99),
+
+insert into student values
+(2,'肖璐',17,99,90),
+(3,'马瑞',18,95,78),
+(4,'周良',16,80,99),
+(5,'赵熙',18,90,86),
+(6,'沈凯',17,67,75),
+(7,'吴溪',17,45,35);
+
+insert into student(id,name,math) values(8,'赵杨',70);
+
+select * from student;
+
+select id,name,math from student;
+
+select name,math+chinese from student;
+
+select name,math+chinese as total from student;
+
+insert into student values(8,'洛明',17,89,99);
+
+select distinct id from student;
+
+select name,math from student order by math asc;
+
+update student set age = 18 where id = 7;
+
+select id,age from student where id = 7;
+
+delete from student where name ='赵杨';
